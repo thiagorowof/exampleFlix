@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+body {
+  background-color: #f7f7f7;
+  margin: 0; 
+}
+
+
+
+
+
+/* CoursesList */
+
+.slick-next{
+  width: 20vw;
+  z-index: 1;
+}
+.slick-prev{
+  width: 10vw;
+  z-index: 1;
+}
+
+.courseBg p{
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.courseDesc{
+  font-size: 0.5em;
+}
+
+
+
+
+
+
+/* Teachers */
+#teacherId .slick-center{
+  background-color: white !important;
+  box-shadow: none !important
+}
+#teacherId .slick-slide img{
+  padding-top: 20px;
+}
+#teacherId .slick-slider{
+  margin: 5% 0 5% 0;
+  font-family: 'Nunito Sans', sans-serif;
+
+}
+#teacherId .slick-slide {
+  background-color: #edf1f2;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.13);
+}
+
+
+#teacherId .slick-prev{ 
+  width: 60vw;
+}
+
+#teacherId .slick-next {
+  right: 18.5vw !important;
+}
+
+#teacherId .slick-prev:before, #teacherId .slick-next:before{
+  color: black !important;
+}
+
+#teacherId .slick-slide img{
+  border-radius: 50%;
+}
+#teacherId .slick-slide p{
+  color: #6e797d;
+}
+#teacherId{
+  text-align: center;
+}
+
+#teacherId .slick-slide img{
+  display: inline-flex !important;
+}
+
+
+
+
+
+
+
+
+/* Header */
+
+.header {
+  background-color: rgba(12,29,41,0.9);
+  z-index: 100;
+}
+.headerNav{
+  padding: 0 0 0 5%;
+  height: 55px;
+  box-shadow: none;
+}
+
+/* .imgLogo{
+  height: 45px;
+} */
+
+@media screen and (min-width : 993px) { 
+  .mr-auto{
+    height: 55px;
+    align-items: center;
+    margin-right: 0 !important;
+  }
+  
+  .mr-auto-search .rbt, .mr-auto-login{
+    left: 80%;
+    position: relative;
+  }
+  
+  .mr-auto a{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 10px
+  }
+}
+
+@media screen and (max-width : 992px) { 
+
+  .navbar-collapse{
+    background-color: rgba(12,29,41,0.9);
+  }
+  .mr-auto a, .mr-auto .rbt{
+    margin-bottom: 3%;
+  }
+  .headerNav{
+    padding: 0 !important;
+  }
+}
+
+.header a {
+  color: #FFF;
+  text-decoration: none;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 15px;
+}
+
+.mr-auto .active {
+  border-bottom: 3px solid blue;
+}
+
+.rbt-input-main{
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: transparent;
+  color: white;
+}
+
+.rbt-input-main:focus{
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: transparent;
+  box-shadow: none;
+  border: 1px solid #ced4da;
+  color: white;
+}
+.rbt-input-hint{
+  font-family: 'Nunito Sans', sans-serif;
+  color: #758692 !important;
+}
+.rbt-menu{
+  background-color: #22313c;
+  border:none;
+  width: auto !important;
+}
+
+
+
+
+
+
+/* Footer */
+
+#footerId {
+  margin-top: 6%;
+}
+#footerId .row{
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.1;
+  letter-spacing: normal;
+  margin-top: 2%;
+}
+#footerId svg{
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  fill: #2472ea;
+}
+#footerId a:hover, a{
+  color: black;
+  text-decoration: none;
+}
+.talkWithUs:hover{
+  cursor: pointer;
+}
+.centerText{
+  text-align: center;
+}
+
+
+
+
+
+/* Home */
+
+.containerCarrousel{
+  margin: -7% 0 0 0;
+  max-width: 100%;
+  padding: 0;
+}
+
+.imgCarrouselBg{
+  background:linear-gradient(0deg,rgba(255,0,150,0.3),rgba(255,0,150,0.3)),url('../img/bg.png');
+  width: 100%;
+  min-height: 600px;
+  background-size: cover;
+}
+
+.carousel-caption{
+  bottom:0;
+  top: 45%;
+}
+
+.carousel-caption h3{
+  font-size: 3.5vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.carousel-caption h3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.btn-danger{
+  border-radius: 20px;
+    box-shadow: 0 2px 8px 0 rgba(255,0,0,0.5);
+    padding: 11px 87px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+h5{
+  margin: 7vh 0 7vh 0;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 31px;
+  line-height: 1.1;
+  color: #484f52;
+}
+
+
+
+
+
+/* Questions page */
+.btnQuestions{
+  color: black;
+  background-color: white;
+  border: none;
+  width: 100%;
+  text-align: left;
+  margin-top: 2%;
+}
+.btnQuestions svg{
+  float: right;
+}
+
+.collapse, .collapsing{
+  padding: 2%;
+}
+
+.btn-primary:hover, .btn-primary:not(:disabled):not(.disabled):active{
+  color: black;
+  background-color: white;
+  border: none;
+}
+.btn-primary:focus, .btn-primary:not(:disabled):not(.disabled):active:focus{
+  box-shadow: none;
+}
+
+
+/* About */
+
+@media (min-width: 576px){
+  .aboutCardContainer .card-deck .card {
+    flex: 1 0 25% !important;
+  }
+}
+
+.aboutCardContainer .card{
+  margin-bottom: 5% !important;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.aboutCardContainer .cardImg1{
+  background:linear-gradient(0deg,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.925)),url('../img/card1.png');
+  background-size: cover;
+  height: 40vh;
+}
+.aboutCardContainer .cardImg2{
+  background:linear-gradient(0deg,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.925)),url('../img/card2.png');
+  background-size: cover;
+  height: 40vh;
+}
+.aboutCardContainer .cardImg3{
+  background:linear-gradient(0deg,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.925)),url('../img/card3.png');
+  background-size: cover;
+  height: 40vh;
+}
+.aboutCardContainer .cardImg4{
+  background:linear-gradient(0deg,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.925)),url('../img/card4.png');
+  background-size: cover;
+  height: 40vh;
+}
+.aboutCardContainer .cardImg5{
+  background:linear-gradient(0deg,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.925)),url('../img/card5.png');
+  background-size: cover;
+  height: 40vh;
+}
+.aboutCardContainer .cardImg6{
+  background:linear-gradient(0deg,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.925)),url('../img/card6.png');
+  background-size: cover;
+  height: 40vh;
+}
+
+.imgCarrouselBg2{
+  background:linear-gradient(0deg,rgba(255,0,150,0.3),rgba(255,0,150,0.3)),url('../img/bg2.jpg');
+  width: 100%;
+  min-height: 600px;
+  background-size: cover;
+}
+
+.containerYoutube iframe{
+  position: absolute;
+  width: 60vw;
+  top: 60%;
+  left: 20vw;
+  height: 45vh;
+}
+
+.containerYoutube{
+  margin-top: 30vh;
+}
+
+.containerYoutube p{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+
+
+/* Login */
+.loginContainer{
+  text-align: center;
+  margin-top: 3%;
+}
+
+.form-control:focus{
+  border-color: #484849;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(56, 56, 56, 0.25);
+}
+
+
+
+
+/* Logged */
+
+#loggedContainer{
+  margin-top: 3%;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.logoutBtn a{
+  color:white !important;
+}
+
+
+
+
+/* CourseModules */
+
+.imgCarrouselBg3{
+  background:linear-gradient(0deg,rgba(14, 11, 12, 0.76),rgba(36, 27, 32, 0.774)),url('../img/bg2.jpg');
+  width: 100%;
+  min-height: 600px;
+  background-size: cover;
+}
+
+@media screen and (max-width : 480px){
+  .imgCarrouselBg3{
+    margin-top: -90vh;
+    min-height: 260vh;
+  }
+}
+
+
+.courseFiles{
+  text-align: center !important;
+}
+.aboutCourse{
+  margin-top: -10%;
+}
+
+.aboutCourseData{
+  text-align: left;
+}
+
+.cardCourse{
+  color: black;
+}
+
+.courseFiles svg{
+  fill: white;
+}
+
+.courseFiles p{
+  margin-bottom: 0;
+}
+
+
+/* ModulesList */
+
+.jumbotron{
+  font-family: 'Nunito Sans', sans-serif;
+}

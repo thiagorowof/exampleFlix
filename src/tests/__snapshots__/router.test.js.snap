@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Verify that the path to the clients screen exists 1`] = `
+<a
+  href="/clientes"
+  onClick={[Function]}
+/>
+`;
+
+exports[`Verify that the path to the dashboard screen exists 1`] = `
+<a
+  href="/"
+  onClick={[Function]}
+/>
+`;
