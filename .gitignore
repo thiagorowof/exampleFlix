@@ -35,6 +35,11 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+sanarserver/node_modules/
+server/node_modules/
+
+# Build react
+build
 
 # TypeScript v1 declaration files
 typings/

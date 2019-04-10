@@ -33,7 +33,7 @@ class AppHeader extends Component {
       return (
 
         <Navbar collapseOnSelect expand="lg" className="header headerNav">
-          <Navbar.Brand href="#">
+          <Navbar.Brand>
             <ImgLogo alt="" src={logo} className="d-inline-block align-top" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -54,7 +54,7 @@ class AppHeader extends Component {
     } else {
       return (
         <Navbar collapseOnSelect expand="lg" className="header headerNav">
-          <Navbar.Brand href="#">
+          <Navbar.Brand>
             <img alt="" src={logo} className="d-inline-block align-top imgLogo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -14,7 +14,7 @@ import Logged from "./components/screens/Logged";
 import CourseModules from "./components/screens/CourseModules";
 
 
-class Main extends Component {
+class App extends Component {
   render() {
     return (
         <BrowserRouter>
@@ -35,4 +35,4 @@ class Main extends Component {
   }
 }
  
-export default Main;
+export default App;

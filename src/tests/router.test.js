@@ -3,11 +3,11 @@ import renderer from 'react-test-renderer';
 import { Link } from 'react-router-dom';
 import { StaticRouter } from 'react-router'
 
-test('Verify that the path to the clients screen exists', () => {
+test('Verify that the path to the about screen exists', () => {
   const context = {};
   const component = renderer.create(
-    <StaticRouter location="/Clients" context={context}>
-      <Link to="/Clients" />
+    <StaticRouter location="/about" context={context}>
+      <Link to="/about" />
     </StaticRouter>
   );
 
@@ -16,11 +16,11 @@ test('Verify that the path to the clients screen exists', () => {
 });
 
 
-test('Verify that the path to the dashboard screen exists', () => {
+test('Verify that the path to the questions screen exists', () => {
   const context = {};
   const component = renderer.create(
-    <StaticRouter location="/#" context={context}>
-      <Link to="/#" />
+    <StaticRouter location="/questions" context={context}>
+      <Link to="/questions" />
     </StaticRouter>
   );
 

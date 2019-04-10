@@ -49,12 +49,12 @@ class AppFooter extends Component {
             <a href="/questions"><MdSend/> Perguntas Frequentes</a>
           </Col>
           <Col>
-            <a href="https://www.sanarflix.com.br/portal/"><MdList/> Portal</a>
+            <a href="https://www.sanarflix.com.br/portal/" aria-label="Portal"><MdList/> Portal</a>
           </Col>
           <Col className="centerText">
-            <a href="https://www.instagram.com/sanarflix.med"><LogoInstagram/></a>
-            <a href="https://www.facebook.com/sanarflix.med/"><LogoFacebook/></a>
-            <a href="https://www.youtube.com/channel/UC9nRs5w7Qk-kUZqlryrasjA"><LogoYoutube/></a>
+            <a href="https://www.instagram.com/sanarflix.med" aria-label="Instagram"><LogoInstagram/></a>
+            <a href="https://www.facebook.com/sanarflix.med/" aria-label="Facebook"><LogoFacebook/></a>
+            <a href="https://www.youtube.com/channel/UC9nRs5w7Qk-kUZqlryrasjA" aria-label="Youtube"><LogoYoutube/></a>
           </Col>
         </Row>
 

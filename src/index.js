@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Main from "./main";
+import App from "./app";
 import "./assets/css/main.css";
 import { Provider } from "react-redux";
 import store from "./store/store";
@@ -12,7 +12,7 @@ configureFakeBackend();
  
 ReactDOM.render(
   <Provider store={store}>
-    <Main/>
+    <App/>
   </Provider>, 
   document.getElementById("root")
 );

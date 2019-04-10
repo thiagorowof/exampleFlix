@@ -1,6 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('Nunito Sans Regular'), local('NunitoSans-Regular'), url(../fonts/nunitosans.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(../fonts/montserrat.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 body {
   background-color: #f7f7f7;
@@ -11,7 +24,7 @@ body {
 
 
 
-/* CoursesList */
+/* ------------------------------------- CoursesList ----------------------------------- */
 
 .slick-next{
   width: 20vw;
@@ -28,7 +41,7 @@ body {
 }
 
 .courseDesc{
-  font-size: 0.5em;
+  font-size: 1em;
 }
 
 
@@ -36,7 +49,7 @@ body {
 
 
 
-/* Teachers */
+/* ------------------------------------- Teachers ----------------------------------- */
 #teacherId .slick-center{
   background-color: white !important;
   box-shadow: none !important
@@ -88,7 +101,7 @@ body {
 
 
 
-/* Header */
+/* ------------------------------------- Header ----------------------------------- */
 
 .header {
   background-color: rgba(12,29,41,0.9);
@@ -99,10 +112,6 @@ body {
   height: 55px;
   box-shadow: none;
 }
-
-/* .imgLogo{
-  height: 45px;
-} */
 
 @media screen and (min-width : 993px) { 
   .mr-auto{
@@ -176,7 +185,7 @@ body {
 
 
 
-/* Footer */
+/* ------------------------------------- Footer ----------------------------------- */
 
 #footerId {
   margin-top: 6%;
@@ -211,7 +220,7 @@ body {
 
 
 
-/* Home */
+/* ------------------------------------- Home ----------------------------------- */
 
 .containerCarrousel{
   margin: -7% 0 0 0;
@@ -262,7 +271,7 @@ h5{
 
 
 
-/* Questions page */
+/* ------------------------------------- Questions ----------------------------------- */
 .btnQuestions{
   color: black;
   background-color: white;
@@ -289,7 +298,7 @@ h5{
 }
 
 
-/* About */
+/* ------------------------------------- About ----------------------------------- */
 
 @media (min-width: 576px){
   .aboutCardContainer .card-deck .card {
@@ -358,7 +367,7 @@ h5{
 
 
 
-/* Login */
+/* ------------------------------------- Login ----------------------------------- */
 .loginContainer{
   text-align: center;
   margin-top: 3%;
@@ -373,7 +382,7 @@ h5{
 
 
 
-/* Logged */
+/* ------------------------------------- Logged ----------------------------------- */
 
 #loggedContainer{
   margin-top: 3%;
@@ -387,7 +396,7 @@ h5{
 
 
 
-/* CourseModules */
+/* ------------------------------------- CourseModules ----------------------------------- */
 
 .imgCarrouselBg3{
   background:linear-gradient(0deg,rgba(14, 11, 12, 0.76),rgba(36, 27, 32, 0.774)),url('../img/bg2.jpg');
@@ -428,7 +437,7 @@ h5{
 }
 
 
-/* ModulesList */
+/* ------------------------------------- ModulesList ----------------------------------- */
 
 .jumbotron{
   font-family: 'Nunito Sans', sans-serif;
