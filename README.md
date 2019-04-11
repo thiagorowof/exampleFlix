@@ -26,58 +26,75 @@ Todo funcional, com back-end fake, usuário e senha se encontra na página de lo
 - [x] Testes (TDD, BDD ou outros)
  Testes efetuados, falarei mais abaixo sobre
 - [x] Aplicação rodando com SSR
- Server side rendering funcional, CSR funcional também.
+ Server side rendering funcional, client side rendering funcional também.
 
-
-
-AJUSTAR:
 ● Criatividade
 ● Organização e legibilidade do código;
 ● Uso e domínio de libs do ecossistema React (Redux, Saga,
 Styled-Components, etc)
 ● Performance
-Mais tempo:
-i18n para internacionalização
-Organizado detalhes de estruturas e nomeclatura
-TDD: Enzyme, MockAxios, Jest, 
-Utilização de lighthouse
-Uso de componentes stateless quando possível
-Utilização de map reduces
-Imagens da api de vocês de cursos está com acesso não permitido
-eslint e 
-testes com jest e enzyme
 
-- [x] Utilização de bootstrap e leves classes css para definição visual - ux/ui;
-- [x] Dados do usuárop sendo salvos no localStorage (pensei em utilizar o firebase que tenho conhecimentos nele);
+
+Falando mais um pouco de tudo que eu fiz:
+1. Utilizei bastante do ecosisstema do React (React, redux, thunk, router...)
+2. Utilizei o axios para as consultas da api (lembrando que uma delas está com acesso negado nas imagens - cursos)
+3. Utilizei do react-test com jest e enzyme para executar alguns testes simples (de rota e de login)
+4. Para analisar o projeto de uma forma geral, performance, melhores práticas, acessibilidade e seo, utilizei o google lighthouse e o eslint para organizar melhor o projeto
+![Image of Lighthouse](https://i.ibb.co/5rd35nf/Screen-Shot-2019-04-10-at-21-05-40.png)
+5. Utilizei node e o express para o SSR
+6. Utilizei o react bootstrap, react ionicicons, styled-components e o slick para customização visual do app!
+7. Sobre a questão visual, tem alguns pontos a detalhar:
+    * Utilizei boa parte dos componentes visuais, já vindo do framework do bootstrap, como por exempo o <Button>, não sendo necessário criar um styled por exemplo, ou adicionar um arquivo css a parte.
+    * Criei alguns styles-components de exemplo, estão na pasta src/components/styled-components. Tenho noção que poderia fazer com outros itens utilizado no projeto e tenho total capacidade disso.
+    * Os CSSs customizados por mim, ficaram todos na pasta src/assets/css/main.css . Sei que isso não é a melhor das abordagens, mas foi mais por questão de tempo mesmo, se analisar esse arquivo, deixei dentro de comentários, por exemplo: /* ------------ paginaTal ------------ */ todas as classes do devido componente, bem organizadinho.
+    * Se eu tivesse mais tempo, iria migrar essas classes para o seus devidos arquivos css e/ou criar styled-components quando necessário
+8. Utilizei o local storage para armazenar os dados do usuário tanto offline/online do usuário logado.
+9. Utilizei componentes stateless quando necessário e map reduces para uma melhor performance
+
+
+## Melhorias possíveis
+
+Caso eu tivesse mais tempo, pensei em alguns ajustes que poderiam serem feitos:
+
+* i18n para internacionalização - Inglês, espanhol, etc...?
+* Mudanças de layout - Pensar em algum layout mais bonito do que o que está atualmente
+* Ajustes de responsividade - Tem o que melhorar ainda.
+* Organização dos CSS - Seja em vários arquivos, seja com pré processadores, seja utilizando styled-comp....
+* Organização melhor de detalhes de estruturas, pastas, componentes e nomeclatura
+* Uma analise melhor do SSR e se realmente é necessário - Caso sim, alguns ajustes no node/express
+
+Eu vejo todos esses pontos que podem ser melhorados, tenho conhecimento, e sei como fazer.
 
 ## Instalação
 
-*É necessário ter o NodeJS(NPM) e React mais atual instalado.
+*É necessário ter o NodeJS(NPM) e React mais atual instalado em sua máquina.
 
-Na pasta raiz do projeto e na pasta ```/server``` executar para instalar as dependências:
+Na pasta raiz do projeto executar para instalar as dependências:
 ```sh
 npm install
 ```
 
 ## Utilização
 
-### Executar server
+### Executar Client side rendering
 
-Executar `npm start` para levantar um servidor de desenvolvimento. Navegar para `http://localhost:3000/` para ver a aplicação em funcionamento.
+Executar `npm start` para levantar um servidor de desenvolvimento. Após o terminal terminar de carregar o projeto, navegar para `http://localhost:3000/` para ver a aplicação em funcionamento.
+
+### Executar Server side rendering
+
+Executar `npm run build` para buildar o projeto, depois executar `npm run server`. Navegar para `http://localhost:3000/` para ver a aplicação em funcionamento.
 
 ### Executar testes
 
 Executar `npm run test` na pasta raiz do projeto executar os testes. Será mostrado na linha de comando so resultados, além de ser gerado uma pasta snapshot com os mesmos..
 
 
-## Melhorias possíveis
-
-* i18n para multilinguagens?
-* Mudanças de layout? 
-
-
 ## Releases
 
+
+* 0.0.2
+    * SSR Fixes
+    * Readme Changes
 * 0.0.1
     * Primeira Release
     * Work in progress
